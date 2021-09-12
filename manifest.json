@@ -1,0 +1,25 @@
+{
+    "name": "Productivity Manager",
+    "version": "1.0",
+    "description": "",
+    "permissions": [
+        "webRequest",
+        "webRequestBlocking",
+        "<all_urls>"
+    ],
+    "manifest_version": 2,
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "browser_action": {
+        "default_popup": "UI.html",
+        "default_title": "Productivity Manager"
+    }
+}
